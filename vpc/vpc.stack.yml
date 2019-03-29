@@ -6,7 +6,7 @@ Parameters:
     Description: 'List of Availability Zones to use for the subnets in the VPC. Note:
       The logical order is preserved.'
     Type: List<AWS::EC2::AvailabilityZone::Name>
-    Default: 'us-east-1a, us-east-1b'
+    Default: 'us-east-2a, us-east-2b'
   CreateAdditionalPrivateSubnets:
     AllowedValues:
     - 'true'
@@ -211,7 +211,7 @@ Conditions:
   NVirginiaRegionCondition:
     Fn::Equals:
     - Ref: AWS::Region
-    - us-east-1
+    - us-east-2
   PrivateSubnetsCondition:
     Fn::Equals:
     - Ref: CreatePrivateSubnets
