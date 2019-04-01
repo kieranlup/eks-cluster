@@ -12,7 +12,7 @@ stack:
     KeyName: 'eks-demo'
     VPCStack: 'eks-vpc'
     ClusterStack: 'eks-cluster'
-    ClusterName: 'Cluster-lgJdhOHIHdA3'
+    ClusterName: 'Cluster-viqNvxOKYw2W'
     NodeInstanceType: 't2.small'
     NodeAutoScalingGroupMaxSize: '1'
 
